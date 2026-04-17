@@ -78,6 +78,7 @@ int initArrayList(arrayList* al) {
 	for (int i = al->size - 1; i >= 0; i--) {
 		deleteArrayList(al, i);
 	}
+	return 1;
 }
 
 elementArrayList getItemArrayList(
@@ -97,7 +98,7 @@ int replaceItemArrayList(arrayList* al,
 }
 
 void printArrayList(arrayList* al) {
-	printf("Èñ¼Ò Çà·Ä ¼øÂ÷ ¸®½ºÆ®: ");
+	printf("ÃˆÃ±Â¼Ã’ Ã‡Ã Â·Ã„ Â¼Ã¸Ã‚Ã· Â¸Â®Â½ÂºÃ†Â®: ");
 
 	printf("Cap: %d, size: %d", al->capacity, al->size);
 
